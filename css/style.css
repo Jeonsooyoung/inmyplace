@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* Device Common Style */
+/*  reset */
+body, h1, h2, h3, p, ul, hr{margin:0px;padding:0px;}
+body{-webkit-text-size-adjust:none;font-size:14px;font-family:Georgia,serif;color:#666;line-height:1.5}
+h1, h2, h3{font-size:100%}
+ul{list-style:none;}
+a{text-decoration:none;}
+a:link, a:visited, a:hover, a:active{color:inherit}
+img{border:0px;max-width:100%;height:auto;vertical-align:top}
+address{font-style:normal}
+hr{width:0px;height:0px;overflow:hidden;position:absolute;top:0px;left:-9999px;visibility:hidden}
+header, nav, section, article, footer{display:block;}
+
+/*  Common class */
+.fl{float:left}
+.pr{position:relative}
+.pa{position:absolute}
+.blind{font-size:0px;line-height:0px;width:1px;height:1px;overflow:hidden;position:absolute;top:0px;left:-9999px;text-indent:-9999px}
+.clear:after{display:block;content:"";clear:both}
+
+.area{width:90%;margin:0 auto 2%;border:1px solid yellow}
+
+/*  skip */
+#skip a{position:absolute;top:0px;left:-9999px;z-index:100}
+#skip a:active, #skip a:focus{left:0px;width:100%;padding:10px 0;background:#000;text-align:center;color:#ffff00;font-weight:bold}
+
+/*  transition Common declation */
+.logo, .logo a:before, #gnb, #gnb ul li a, #headerBar .area p, #headerBar .area p a, #headerBar .area ul li a{-webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s;}
+
+/*  header */
+
+
+/*  headerBar */
+
+/*  content */
+
+/*  footer */
+
+/* =========== 2) 모바일 만의 스타일 =========== */
+@media all and (max-width:767px) {
+	/*  header */
+	
+	/*  headerBar */
+	/*  content */
+	/* 가변그리드 p 31 :화면의 크기와 관계없이 자유롭게 늘어나거나 줄어들수 있도록 픽셀대신 퍼센트로 제작하는 기술
+	공식 = 가변크기로 만들 박스의 가로 너비 ÷ 박스를 감싸고 있눈 가로 너비 X 100
+	나자신  ÷ 기준 X 100
+
+	320사이즈 기준으로 90%(.area) =288px
+	288-border(2)-padding(20)=266px
+	266 ÷ 288 x 100=92.36111111111111% 소수점은 간단히 생략하지 않는다
+	*/
+	
+
+	/*  footer */	
+}
+
+/* 모바일 수직방향으로 세워보기 */
+@media all and (max-width:767px) and (orientation:portrait) {
+	/*  headerBar */
+	
+}
+
+@media all and (max-width:767px) and (orientation:landscape) {
+	/*  headerBar */
+	
+}
+
+/* =========== 3) 태블릿+데스크탑 공통스타일 =========== */
+@media all and (min-width:768px) {
+	/*  header */
+	
+
+	/*  headerBar */
+	/*  content */
+	
+
+	
+
+	/*  footer */
+	
+}
+
+/* =========== 4) 태블릿 만의 스타일 =========== */
+@media all and (min-width:768px) and (max-width:1024px) {
+	/*  header */
+	
+	/*  headerBar */
+	/*  content */
+	/*  footer */
+}
+
+/* =========== 5) 데스크탑 만의 스타일 =========== */
+@media all and (min-width:1025px) {
+	
+	/*  header */
+	/*  headerBar */
+	
+	/*  content */
+	/*  footer */	
+}
